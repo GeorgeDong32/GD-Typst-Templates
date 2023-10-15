@@ -1,4 +1,4 @@
-#import "./templates/homework.typ": *
+#import "../templates/homework.typ": *
 
 #show: homework.with(
     title: "作业一",

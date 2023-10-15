@@ -1,4 +1,4 @@
-#import "templates/report.typ": *
+#import "../templates/report.typ": *
 
 #show: report.with(
   title: "实验报告实验",
