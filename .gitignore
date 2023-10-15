@@ -1,1 +1,6 @@
 *.code-workspace
+Test.pdf
+Test.typ
+/templates/*.pdf
+temp.txt
+/*.pdf
