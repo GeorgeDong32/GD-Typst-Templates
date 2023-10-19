@@ -5,7 +5,7 @@
 #let fonts = (
   text: ("Times New Roman", "SimSun"),
   sans: ("Times New Roman", "SimSun"),
-  code: ("Cascadia Code", "Consolas"),
+  code: ("Cascadia Code", "Consolas", "SimSun"),
 )
 
 #let textbf(it) = block(
@@ -128,7 +128,7 @@
     align(center)[
         
         #grid(
-            columns: (0.4fr, 1fr, 1fr, 1fr, 1fr, 0.1fr,),
+            columns: (0.4fr, 1fr, 1fr, 1fr, 1fr, 0.7fr),
             rows: (12pt),
             gutter: 0.5em,
             fieldname(text("学号：")),
