@@ -34,6 +34,7 @@
     coursecode: "EIT000",
     semester: "2023 - 2024 学年第一学期",
     time: "2023 年 10 月 15 日",
+    schoolname: "中山大学电子与信息工程学院",
     body
 ) = {
     set document(title: title)
@@ -99,11 +100,21 @@
                 #it.body
                 #v(0em)
             ]
-        } else {
+        } else if it.level == 3 {
             [
                 #set text(12pt, weight: "regular")
                 #v(0.3em)
                 #counter(heading).step(level: 3)
+                #counter(heading).display("1.1")
+                #h(0.2em)
+                #it.body
+                #v(0em)
+            ]
+        } else {
+            [
+                #set text(12pt, weight: "regular")
+                #v(0.3em)
+                #counter(heading).step(level: 4)
                 #counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
@@ -160,7 +171,7 @@
         #block(text(size: FS4S, "课程代码：") + text(size: FS4S, coursecode), below: CoverB)
         #block(text(size: FS4S, semester), below: CoverB)
         #v(23.4em)
-        #block(text(size: FS3, "中山大学电子与信息工程学院"))
+        #block(text(size: FS3, schoolname))
         #block(text(size: FS4S, time))
         #v(2em)
         #counter(page).update(0)
