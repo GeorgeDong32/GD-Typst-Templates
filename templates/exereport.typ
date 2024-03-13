@@ -31,7 +31,7 @@
     expname: "实验一 Typst入门",
     body
 ) = {
-    set page(paper: "a4", margin: (top: 2.54cm, bottom: 2.54cm, left: 3.18cm, right: 3.18cm),
+    set page(paper: "a4", margin: (top: 2.54cm, bottom: 2.54cm, left: 2.54cm, right: 2.54cm),
     header: [
       #set text(10pt)
       #coursename#h(2em)#expname#h(1fr)#name#h(2em)#stdid
