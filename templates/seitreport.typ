@@ -86,7 +86,7 @@
                 #set text(16pt, weight: "regular")
                 #v(0.3em)
                 #counter(heading).step(level: 1)
-                #counter(heading).display("一、")
+                #context counter(heading).display("一、")
                 #it.body
                 #v(0em)
             ]
@@ -95,7 +95,7 @@
                 #set text(14pt, weight: "regular")
                 #v(0.3em)
                 #counter(heading).step(level: 2)
-                #counter(heading).display("1.1")
+                #context counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
                 #v(0em)
@@ -105,7 +105,7 @@
                 #set text(12pt, weight: "regular")
                 #v(0.3em)
                 #counter(heading).step(level: 3)
-                #counter(heading).display("1.1")
+                #context counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
                 #v(0em)
@@ -115,7 +115,7 @@
                 #set text(12pt, weight: "regular")
                 #v(0.3em)
                 #counter(heading).step(level: 4)
-                #counter(heading).display("1.1")
+                #context counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
                 #v(0em)

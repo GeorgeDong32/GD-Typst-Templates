@@ -65,7 +65,7 @@
 
     show heading: it => [
         // Cancel indentation for headings of level 2 or above
-        #set par(first-line-indent: 0em)
+        #set par(first-line-indent: 0em, hanging-indent: 2em)
 
         #let sized_heading(it, size, weight, mt, mb, ) = [
             #set text(size, weight: weight)
@@ -80,41 +80,41 @@
         #if it.level == 1 { 
             [
                 #set text(16pt, weight: "regular")
-                #v(0.3em)
+                #v(0.5em)
                 #counter(heading).step(level: 1)
-                #counter(heading).display("一、")
+                #context counter(heading).display("一、")
                 #it.body
-                #v(0em)
+                #v(0.3em)
             ]
         } else if it.level == 2 {
             [
                 #set text(14pt, weight: "regular")
-                #v(0.3em)
+                #v(0.2em)
                 #counter(heading).step(level: 2)
-                #counter(heading).display("1.1")
+                #context counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
-                #v(0em)
+                #v(0.3em)
             ]
         } else if it.level == 3 {
             [
                 #set text(12pt, weight: "regular")
-                #v(0.3em)
+                #v(0.2em)
                 #counter(heading).step(level: 3)
-                #counter(heading).display("1.1")
+                #context counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
-                #v(0em)
+                #v(0.3em)
             ]
         } else {
             [
                 #set text(12pt, weight: "regular")
-                #v(0.3em)
+                #v(0.2em)
                 #counter(heading).step(level: 4)
-                #counter(heading).display("1.1")
+                #context counter(heading).display("1.1")
                 #h(0.2em)
                 #it.body
-                #v(0em)
+                #v(0.3em)
             ]
         }
     ]
